@@ -1,6 +1,4 @@
-FROM centos
+FROM Centos:latest
 MAINTAINER avinash@gmail.com
-RUN yum install -y httpd
-WORKDIR /var/www/html/
-CMD ["/usr/sbin/httpd", "D", "FOREGROUND"]
+RUN yum install httpd -y
 EXPOSE 80
