@@ -1,4 +1,5 @@
-FROM Centos:latest
-MAINTAINER avinash@gmail.com
-RUN yum install httpd -y
+FROM centos:latest
+LABEL maintainer="avinash@gmail.com"
+RUN yum install -y httpd
 EXPOSE 80
+
